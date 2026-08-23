@@ -121,6 +121,36 @@
   .bio h3 { font-size: 1rem; color: var(--navy); margin-bottom: .3rem; }
   .bio p { font-size: .9rem; text-align: justify; }
 
+  /* 聯絡資訊區塊 */
+  .contact-box {
+    margin-top: 2rem;
+    padding: 1.2rem 1.5rem;
+    background: #f4f7fb;
+    border-radius: 8px;
+    border: 1px solid var(--navy-light);
+    font-size: .95rem;
+  }
+  .contact-box h3 {
+    font-size: 1.05rem;
+    color: var(--navy);
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+  }
+  .contact-box p {
+    margin: .25rem 0;
+    color: #333;
+  }
+  .contact-box a {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .contact-box a:hover {
+    text-decoration: underline;
+  }
+
   @media (max-width: 640px) {
     .content-wrap { padding: 1.2rem; }
     h1 { font-size: 1.35rem; }
@@ -131,7 +161,7 @@
     .page { max-width: none; box-shadow: none; }
     .cta-section { display: none; }
     h2 { break-after: avoid; }
-    tr, .bio { break-inside: avoid; }
+    tr, .bio, .contact-box { break-inside: avoid; }
     a { color: inherit; text-decoration: none; }
   }
 </style>
@@ -290,6 +320,14 @@
     <div class="bio">
       <h3>林毅 醫師（綜合討論二主持）｜奇美醫院急診醫學部主治醫師</h3>
       <p>台灣引進「O 型低抗體力價全血」（LTOWB）之臨床先行者——奇美醫院為全台率先引進 LTOWB 用於嚴重外傷急救之醫院。長期投入外傷輸血與急診重症照護。</p>
+    </div>
+
+    <!-- 承辦聯絡資訊 -->
+    <h2>聯絡資訊</h2>
+    <div class="contact-box">
+      <h3>【承辦聯絡】新光吳火獅紀念醫院</h3>
+      <p><b>電話：</b><a href="tel:0228332211,702082">02-2833-2211 轉 702082</a></p>
+      <p><b>Email：</b><a href="mailto:A005289@ms.skh.org.tw">A005289@ms.skh.org.tw</a></p>
     </div>
   </div>
 
