@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 院前輸血與區域急救網絡國際研討會｜線上報名與議程</title>
+<style>
+  :root {
+    --navy: #1F3864;
+    --navy-dark: #142544;
+    --navy-light: #D6E4F0;
+    --accent-red: #C00000;
+    --accent-red-hover: #9E0000;
+    --gray-bg: #F2F2F2;
+    --tbd-bg: #FFF7DC;
+    --border: #C9C9C9;
+    --text: #222;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", "Heiti TC", sans-serif;
+    color: var(--text);
+    background: #f8f9fa;
+    line-height: 1.65;
+    padding: 2rem 1rem;
+  }
+  .page {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  }
+
+  header {
+    border-bottom: 4px solid var(--navy);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  h1 { color: var(--navy); font-size: 1.65rem; line-height: 1.4; }
+  .en-title { font-size: 1.05rem; color: #555; font-style: italic; margin-top: .3rem; }
+  
+  .meta-box {
+    margin-top: 1.2rem;
+    padding: 1rem 1.2rem;
+    background: #f4f7fb;
+    border-left: 4px solid var(--navy);
+    border-radius: 0 6px 6px 0;
+    font-size: .95rem;
+  }
+  .meta-box div { margin: .25rem 0; }
+  .meta-box b { color: var(--navy); }
+
+  /* 報名行動呼籲區塊 */
+  .cta-section {
+    background: linear-gradient(135deg, #1F3864 0%, #2e528e 100%);
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0 2rem;
+    text-align: center;
+  }
+  .cta-section h2 {
+    color: #fff;
+    border-left: none;
+    padding-left: 0;
+    margin: 0 0 .5rem 0;
+    font-size: 1.35rem;
+  }
+  .cta-section p { font-size: .95rem; opacity: .9; margin-bottom: 1rem; }
+  .btn-register {
+    display: inline-block;
+    background: #e63946;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: .75rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(230, 57, 70, 0.35);
+    transition: all .2s ease;
+  }
+  .btn-register:hover {
+    background: #c92a37;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(230, 57, 70, 0.45);
+    color: #fff;
+  }
+
+  h2 {
+    color: var(--navy);
+    font-size: 1.25rem;
+    margin: 2rem 0 .8rem;
+    border-left: 6px solid var(--navy);
+    padding-left: .55rem;
+  }
+
+  .table-wrap { overflow-x: auto; margin-top: .5rem; }
+  table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+  th, td { border: 1px solid var(--border); padding: .65rem .7rem; text-align: left; vertical-align: top; }
+  th { background: var(--navy); color: #fff; white-space: nowrap; }
+  td.time { white-space: nowrap; font-variant-numeric: tabular-nums; width: 7.5rem; }
+  td.min  { text-align: center; width: 3.2rem; }
+  tr.session td { background: var(--navy-light); font-weight: bold; color: var(--navy); }
+  tr.break td { background: var(--gray-bg); }
+  tr.tbd td { background: var(--tbd-bg); }
+  .en { display: block; font-style: italic; color: #555; font-size: .88em; margin-top: .2rem; }
+  .role { display: block; color: #555; font-size: .88em; margin-top: .2rem; }
+
+  .notes { margin-top: .9rem; font-size: .85rem; color: #444; }
+  .notes li { margin: .25rem 0 .25rem 1.2rem; }
+  .legend {
+    display: inline-block;
+    width: .95em;
+    height: .95em;
+    border: 1px solid var(--border);
+    vertical-align: -.12em;
+    margin-right: .3em;
+  }
+  .legend.tbd { background: var(--tbd-bg); }
+
+  .bio { margin-bottom: 1.1rem; padding: .9rem 1.1rem; border: 1px solid var(--border); border-radius: 6px; }
+  .bio.tbd { background: var(--tbd-bg); }
+  .bio h3 { font-size: 1rem; color: var(--navy); margin-bottom: .3rem; }
+  .bio p { font-size: .9rem; text-align: justify; }
+
+  /* 報名表單內嵌區塊 */
+  .form-container {
+    margin-top: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fafafa;
+  }
+  .form-container iframe {
+    width: 100%;
+    height: 750px;
+    border: none;
+    display: block;
+  }
+  .form-fallback {
+    text-align: center;
+    padding: 1rem;
+    font-size: .9rem;
+    color: #555;
+    background: #fff;
+    border-top: 1px solid var(--border);
+  }
+  .form-fallback a { color: var(--navy); font-weight: bold; }
+
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    font-size: .8rem;
+    color: #777;
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    .page { padding: 1.2rem; }
+    h1 { font-size: 1.35rem; }
+    .form-container iframe { height: 600px; }
+  }
+
+  @media print {
+    body { padding: 0; font-size: 11pt; background: #fff; }
+    .page { max-width: none; padding: 0; box-shadow: none; }
+    .cta-section, .form-container, .form-fallback { display: none; }
+    h2 { break-after: avoid; }
+    tr, .bio { break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <h1>2026 院前輸血與區域急救網絡國際研討會</h1>
+  <div class="en-title">Blood on Board 2026: Prehospital Transfusion and Regional Emergency Care Networks</div>
+  
+  <div class="meta-box">
+    <div><b>研討日期：</b>2026 年 10 月 8 日（星期四）13:00–17:30（12:30 開放報到）</div>
+    <div><b>活動地點：</b>內政部消防署 國際會議廳</div>
+    <div><b>主辦單位（暫擬）：</b>內政部消防署、新光吳火獅紀念醫院</div>
+    <div><b>協辦單位（暫擬）：</b>臺灣緊急救護醫療指導醫師學會、台灣輸血學會、醫療財團法人台灣血液基金會</div>
+  </div>
+</header>
+
+<!-- 頂部快速報名 CTA -->
+<div class="cta-section">
+  <h2>即刻報名參加研討會</h2>
+  <p>席次有限，敬請及早填寫報名表單以利座位及資料安排。</p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSee7OFZfqnRg4KnoIAxHHgREsR1HTuiC-w9Aph5upH9lAMRyA/viewform?usp=sharing&ouid=111400256695888591474" target="_blank" rel="noopener noreferrer" class="btn-register">
+    點此開啟線上報名表單 ↗
+  </a>
+</div>
+
+<h2>大會議程</h2>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>時間</th><th>分鐘</th><th>場次／講題</th><th>講者／主持</th></tr>
+  </thead>
+  <tbody>
+    <tr class="break">
+      <td class="time">12:30–13:00</td><td class="min">30</td>
+      <td>報到 <span class="en">Registration</span></td><td>—</td>
+    </tr>
+    <tr class="tbd">
+      <td class="time">13:00–13:10</td><td class="min">10</td>
+      <td>開幕致詞 <span class="en">Opening Remarks</span></td>
+      <td>內政部消防署 署長（暫訂）<br>衛生福利部 林靜儀 次長（暫訂）</td>
+    </tr>
+    <tr class="break">
+      <td class="time">13:10–13:15</td><td class="min">5</td>
+      <td>大合影（致詞貴賓與全體講者）<span class="en">Group Photo</span></td><td>—</td>
+    </tr>
+    <tr class="session">
+      <td colspan="2">Session 1</td>
+      <td>美國德州經驗：區域網絡與院前全血</td>
+      <td>座長：陳昭文 醫師<span class="role">高雄醫學大學附設中和紀念醫院外傷及重症外科主任</span></td>
+    </tr>
+    <tr>
+      <td class="time">13:15–13:40</td><td class="min">25</td>
+      <td>建構區域「系統之系統」：STRAC 三十年發展與 MEDCOM 急重症調度模式
+        <span class="en">Building a Regional System of Systems: Three Decades of STRAC and the MEDCOM Model for Emergency Care Coordination</span></td>
+      <td>Mr. David Eric Epley<span class="role">STRAC 執行董事兼執行長</span></td>
+    </tr>
+    <tr>
+      <td class="time">13:40–14:25</td><td class="min">45</td>
+      <td>院前低效價 O 型全血（LTOWB）：從戰場經驗到區域照護標準
+        <span class="en">Prehospital Low-Titer O Whole Blood: From Battlefield Lessons to a Regional Standard of Care</span></td>
+      <td>Dr. Donald Jenkins, MD, FACS<span class="role">STRAC 區域全血委員會主席</span></td>
+    </tr>
+    <tr>
+      <td class="time">14:25–15:00</td><td class="min">35</td>
+      <td>區域小兒急重症照護體系：臨床指引、模擬訓練與小兒院前輸血考量
+        <span class="en">Building a Regional Pediatric Emergency Care System: Guidelines, Simulation, and Pediatric Considerations in Prehospital Transfusion</span></td>
+      <td>Ms. Sondie Epley, RN<span class="role">STRAC 小兒系統委員會共同主席</span></td>
+    </tr>
+    <tr>
+      <td class="time">15:00–15:30</td><td class="min">30</td>
+      <td>綜合討論（一）：德州區域網絡經驗之借鏡
+        <span class="en">Panel Discussion I: Lessons from the Texas Regional Model</span></td>
+      <td>主持：陳昭文 醫師（座長續任）<span class="role">與談：Session 1 全體講者</span></td>
+    </tr>
+    <tr class="break">
+      <td class="time">15:30–15:45</td><td class="min">15</td>
+      <td>茶敘 <span class="en">Coffee Break</span></td><td>—</td>
+    </tr>
+    <tr class="session">
+      <td colspan="2">Session 2</td>
+      <td>供血體系與台灣落地</td>
+      <td>座長：簡鈺純 專門委員<span class="role">內政部消防署救災救護組</span></td>
+    </tr>
+    <tr class="tbd">
+      <td class="time">15:45–16:30</td><td class="min">45</td>
+      <td>從國家血液供應機構觀點看院前輸血：供應鏈、臨床治理與澳洲經驗
+        <span class="en">Enabling Prehospital Transfusion from the Blood Service Perspective: Supply Chain, Clinical Governance, and the Australian Experience</span></td>
+      <td>Lifeblood Melbourne 代表<span class="role">【Placeholder：Dr. Zhi Tan 或 Ms. Rae French，待確認】</span></td>
+    </tr>
+    <tr>
+      <td class="time">16:30–17:00</td><td class="min">30</td>
+      <td>欲做院前，先做院後——重度急救責任醫院的擔當與責任
+        <span class="en">Prehospital Care Begins In-Hospital: The Role and Commitment of Severe-Level Emergency Responsibility Hospitals</span></td>
+      <td>侯勝文 醫師<span class="role">新光醫院急診醫學科／臺灣緊急救護醫療指導醫師學會理事長</span></td>
+    </tr>
+    <tr class="tbd">
+      <td class="time">17:00–17:30</td><td class="min">30</td>
+      <td>綜合討論（二）：邁向台灣院前輸血模式——治理、供血與第一線落地
+        <span class="en">Panel Discussion II: Toward a Taiwan Model of Prehospital Blood Transfusion — Governance, Supply, and Frontline Implementation</span>
+        <span class="role">（尾聲由主持人閉幕總結，17:30 準時散會）</span></td>
+      <td>主持：林毅 醫師<span class="role">奇美醫院急診醫學部</span>
+        <span class="role">與談：全體講者＋內政部消防署、台灣血液基金會、台灣輸血學會代表（人選由各機關指派後填入）</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<ul class="notes">
+  <li><span class="legend tbd"></span>淺黃底＝人選暫訂或待確認，定案後更新。</li>
+  <li>國際講者場次含 Q&amp;A（Jenkins／Lifeblood 場次建議演講 35–40 分鐘＋Q&amp;A 5–10 分鐘；Epley 場次之提問集中於綜合討論一）。</li>
+  <li>國際講者以英文演講，無逐步口譯（若後續安排同步口譯，亦不影響議程時間配置）。</li>
+</ul>
+
+<h2>線上報名</h2>
+<div class="form-container">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSee7OFZfqnRg4KnoIAxHHgREsR1HTuiC-w9Aph5upH9lAMRyA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">載入報名表單中…</iframe>
+  <div class="form-fallback">
+    如表單未能正常顯示，請直接點選：<a href="https://docs.google.com/forms/d/e/1FAIpQLSee7OFZfqnRg4KnoIAxHHgREsR1HTuiC-w9Aph5upH9lAMRyA/viewform?usp=sharing&ouid=111400256695888591474" target="_blank" rel="noopener noreferrer">開啟 Google 表單報名</a>
+  </div>
+</div>
+
+<h2>講者簡介</h2>
+
+<div class="bio">
+  <h3>Mr. David Eric Epley｜西南德州區域諮詢委員會（STRAC）執行董事兼執行長</h3>
+  <p>STRAC 於 1998 年創立時之首位員工，帶領組織從救災通訊呼叫中心發展為年收入近四千萬美元的區域急重症治理與協調平台。近 35 年公共安全與緊急管理經驗、30 年國家註冊 Paramedic 資歷、13 年執法人員背景；曾任 San Antonio AirLife 航空救護人員十年，獲 1996 年全美年度最佳航空救護員。主導建置覆蓋 31 個 EMS 機構的區域電子救護紀錄系統、德州緊急醫療任務小組（EMTF）與 STRAC-ID 智慧憑證系統。現任德州州長緊急醫療與創傷諮詢委員會（GETAC）災害委員會主席。</p>
+</div>
+
+<div class="bio">
+  <h3>Dr. Donald Jenkins, MD, FACS｜STRAC 區域全血委員會主席</h3>
+  <p>創傷外科與戰傷醫學專家，退役軍醫上校、大學醫院外科教授。主導 STRAC「低效價 O+ 型全血計畫」（LTOWB），將全血部署至西南德州逾 50 個地面 EMS 單位與空中醫療基地，完成逾 500 次院前全血輸血，血品浪費率低於 1%。National Whole Blood Academy 與 National Blood Summit 核心推動者，致力於全美院前全血儲存與輸血臨床協議之標準化。</p>
+</div>
+
+<div class="bio">
+  <h3>Ms. Sondie Epley, RN｜STRAC 小兒系統委員會共同主席</h3>
+  <p>與 Ian Mitchell 醫師共同帶領 STRAC 小兒照護體系，為 TSA-P 轄區內醫院與院前 EMS 制定小兒專屬臨床指引、分流決策演算法與影像指南，並推動 Crashing Kids Pediatric Simulation Program、Pedi Sim 教官培訓等小兒模擬急救訓練。</p>
+</div>
+
+<div class="bio tbd">
+  <h3>Lifeblood Melbourne 代表【待確認】｜Australian Red Cross Lifeblood</h3>
+  <p>Placeholder（二擇一）：<b>Dr. Zhi Tan</b>——輸血醫學專科醫師（Transfusion Medicine Specialist），任職於病理與臨床治理部門，曾獲 Harold Gunson Fellowship，發表血品供應與紅血球抗體流行病學研究。<b>Ms. Rae French</b>——Blood Matters 計畫團隊（維多利亞州衛生部與 Lifeblood 合作之輸血品質改善與教育計畫）。依講題設計建議優先邀請 Dr. Zhi Tan；若由 Ms. French 出席，講題微調為著重輸血品質監測與教育推廣。</p>
+</div>
+
+<div class="bio">
+  <h3>侯勝文 醫師｜新光醫院急診醫學科主治醫師／臺灣緊急救護醫療指導醫師學會（TAEMSP）理事長</h3>
+  <p>新光醫院急診醫學科主治醫師（2008 年迄今）、臺北市政府消防局醫療指導醫師（2010 年迄今），2025 年起擔任臺灣緊急救護醫療指導醫師學會（Taiwan Association of EMS Physicians, TAEMSP）理事長。高雄醫學大學醫學系畢業，美國約翰霍普金斯大學彭博公共衛生學院公共衛生碩士。專長為 EMS 醫療指導、到院前復甦與院外心跳停止（OHCA）照護系統；曾任 NAEMSP 國際醫療指導醫師課程國際講師，並為 EMS Asia 常任講者與主持人。「院前輸血三年計畫」即由其領導之 TAEMSP 規劃推動。</p>
+</div>
+
+<h2>座長與綜合討論主持人</h2>
+
+<div class="bio">
+  <h3>陳昭文 醫師（Session 1 座長兼綜合討論一主持）｜高雄醫學大學附設中和紀念醫院外傷及重症外科主任</h3>
+  <p>高雄醫學大學醫學院急診學科副教授，專長外傷緊急處理、重症加護醫療與區域緊急醫療系統規劃。曾赴美國華盛頓大學 Harborview Medical Center 與邁阿密大學 Ryder Trauma Center 訪問進修，現任台灣外傷醫學會秘書長，長期倡議重塑台灣外傷系統。</p>
+</div>
+
+<div class="bio tbd">
+  <h3>簡鈺純 專門委員（Session 2 座長）｜內政部消防署救災救護組</h3>
+  <p>緊急救護體系資深官員，曾服務於臺北市政府消防局緊急救護科，獲選 103 年鳳凰獎楷模與 104 年模範公務人員，推動多項緊急救護品質管理制度之先例，包括開發全球首創之 iCPR 體感互動學習系統。（職銜依主辦方資訊填入；正式發文前與消防署窗口最後核對。）</p>
+</div>
+
+<div class="bio">
+  <h3>林毅 醫師（綜合討論二主持）｜奇美醫院急診醫學部主治醫師</h3>
+  <p>台灣引進「O 型低抗體力價全血」（LTOWB）之臨床先行者——奇美醫院為全台率先引進 LTOWB 用於嚴重外傷急救之醫院。長期投入外傷輸血與急診重症照護。</p>
+</div>
+
+<footer>
+  版本 v9（2026-08-23）｜2026 院前輸血與區域急救網絡國際研討會籌備小組
+</footer>
+
+</div>
+</body>
+</html>
